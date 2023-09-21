@@ -16,6 +16,11 @@ body {
 }
 
 .modal {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -33,6 +38,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+
+.header {
+  font-weight: bold;
 }
 
 .close-button {
@@ -48,6 +66,8 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+
+  flex-shrink: 0;
 }
 
 button {
